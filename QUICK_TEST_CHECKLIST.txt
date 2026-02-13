@@ -1,0 +1,258 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║          M·A·C LIPGLASS SHOWCASE - QUICK TEST CHECKLIST            ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
+
+Use this checklist to quickly verify all features are working.
+
+───────────────────────────────────────────────────────────────────────
+
+BEFORE TESTING
+───────────────────────────────────────────────────────────────────────
+⬜ Clear browser cache (Ctrl+Shift+R or Cmd+Shift+R)
+⬜ Navigate to homepage
+⬜ Scroll to section (between Trending Products and New Arrivals)
+⬜ Ensure screen width is ≥1024px (desktop view)
+⬜ Open browser console (F12) to check for errors
+
+───────────────────────────────────────────────────────────────────────
+
+VISUAL VERIFICATION
+───────────────────────────────────────────────────────────────────────
+⬜ Section is visible on desktop
+⬜ Angled pink background on right side (45% width)
+⬜ Large circular product image (360px) displayed
+⬜ "Trending Now:" header visible
+⬜ Product title with text shadow visible
+⬜ "Create a shine that lasts" tagline (words highlighted)
+⬜ Product description displayed
+⬜ 6 color swatch buttons in a row
+⬜ 5 mini circular images in a row
+⬜ "Bring your vision to life" vertical text on right
+⬜ "Rizla Cosmetics - Premium Beauty" at bottom
+
+───────────────────────────────────────────────────────────────────────
+
+COLOR BUTTON TESTING (Click each button)
+───────────────────────────────────────────────────────────────────────
+⬜ Button 1 (Rose Blush #dc8289):
+   - Background changes to rose pink
+   - Title changes to rose pink
+   - Transition is smooth
+
+⬜ Button 2 (Coral Dream #fc7675):
+   - Background changes to coral
+   - Title changes to coral
+   - Transition is smooth
+
+⬜ Button 3 (Soft Pink #fed4d5):
+   - Background changes to soft pink
+   - Title changes to soft pink
+   - Transition is smooth
+
+⬜ Button 4 (Peachy Nude #ed7c67):
+   - Background changes to peachy
+   - Title changes to peachy
+   - Transition is smooth
+
+⬜ Button 5 (Hot Pink #ff4f73):
+   - Background changes to hot pink
+   - Title changes to hot pink
+   - Transition is smooth
+
+⬜ Button 6 (Deep Berry #96051f):
+   - Background changes to burgundy
+   - Title changes to burgundy
+   - Transition is smooth
+
+───────────────────────────────────────────────────────────────────────
+
+MINI IMAGE GALLERY TESTING (Click each thumbnail)
+───────────────────────────────────────────────────────────────────────
+⬜ Mini Image 1:
+   - Main image fades out
+   - Image source changes
+   - Main image fades in
+   - Thumbnail bounces
+
+⬜ Mini Image 2:
+   - Main image swaps correctly
+   - Fade effect is smooth
+   - Thumbnail animates
+
+⬜ Mini Image 3:
+   - Main image swaps correctly
+   - Fade effect is smooth
+   - Thumbnail animates
+
+⬜ Mini Image 4:
+   - Main image swaps correctly
+   - Fade effect is smooth
+   - Thumbnail animates
+
+⬜ Mini Image 5:
+   - Main image swaps correctly
+   - Fade effect is smooth
+   - Thumbnail animates
+
+───────────────────────────────────────────────────────────────────────
+
+HOVER EFFECTS TESTING
+───────────────────────────────────────────────────────────────────────
+⬜ Color buttons scale to 125% on hover
+⬜ Mini images scale to 125% on hover
+⬜ Mini images' border changes to pink on hover
+⬜ Main image scales to 105% on hover
+⬜ All transitions are smooth (no jank)
+
+───────────────────────────────────────────────────────────────────────
+
+KEYBOARD ACCESSIBILITY TESTING
+───────────────────────────────────────────────────────────────────────
+⬜ Tab to color buttons (focus visible)
+⬜ Tab to mini images (focus visible)
+⬜ Press Enter on mini image (swaps main image)
+⬜ Focus indicators are clear
+
+───────────────────────────────────────────────────────────────────────
+
+RESPONSIVE TESTING
+───────────────────────────────────────────────────────────────────────
+⬜ Desktop (≥1024px): Section visible
+⬜ Tablet (<1024px): Section hidden
+⬜ Mobile (<768px): Section hidden
+
+───────────────────────────────────────────────────────────────────────
+
+BROWSER CONSOLE CHECKS
+───────────────────────────────────────────────────────────────────────
+⬜ No JavaScript errors in console
+⬜ No 404 errors for images
+⬜ No CSS warnings
+
+Check function existence (type in console):
+⬜ typeof changeColor1 → returns "function"
+⬜ typeof updateTrending → returns "function"
+⬜ typeof swapTrendingImage → returns "function"
+
+Check element existence (type in console):
+⬜ document.getElementById('trending-bg') → returns element
+⬜ document.getElementById('trending-title') → returns element
+⬜ document.getElementById('trending-main-img') → returns element
+
+───────────────────────────────────────────────────────────────────────
+
+ANIMATION TESTING
+───────────────────────────────────────────────────────────────────────
+⬜ AOS fade-right animation on left content
+⬜ AOS fade-left animation on right content
+⬜ Decorative blur circles animating (pulse/bounce)
+⬜ All animations are 60fps (smooth)
+
+───────────────────────────────────────────────────────────────────────
+
+EDGE CASES TESTING
+───────────────────────────────────────────────────────────────────────
+⬜ Click same color button twice (should work)
+⬜ Click color buttons rapidly (should work)
+⬜ Click mini images rapidly (should swap smoothly)
+⬜ Hover during transitions (no visual glitches)
+
+───────────────────────────────────────────────────────────────────────
+
+CROSS-BROWSER TESTING
+───────────────────────────────────────────────────────────────────────
+Chrome/Edge:
+⬜ All features work
+⬜ No console errors
+⬜ Smooth animations
+
+Firefox:
+⬜ All features work
+⬜ No console errors
+⬜ Smooth animations
+
+Safari (if available):
+⬜ All features work
+⬜ No console errors
+⬜ Smooth animations
+
+───────────────────────────────────────────────────────────────────────
+
+FINAL VERIFICATION
+───────────────────────────────────────────────────────────────────────
+⬜ All 6 color buttons work correctly
+⬜ All 5 mini images swap correctly
+⬜ All hover effects work
+⬜ All transitions are smooth
+⬜ Section hidden on mobile
+⬜ No console errors
+⬜ Product data displaying correctly
+⬜ Fonts displaying correctly (Playfair + Poppins)
+
+───────────────────────────────────────────────────────────────────────
+
+COMMON ISSUES & QUICK FIXES
+───────────────────────────────────────────────────────────────────────
+
+Section not visible:
+→ Check screen width ≥1024px
+→ Verify products exist in database
+→ Clear cache and refresh
+
+Color buttons don't work:
+→ Check console for JS errors
+→ Verify functions defined (see console checks above)
+
+Images don't swap:
+→ Check product has multiple images
+→ Verify swapTrendingImage function exists
+
+No smooth transitions:
+→ Check CSS classes applied
+→ Verify browser supports transitions
+
+───────────────────────────────────────────────────────────────────────
+
+PASS CRITERIA
+───────────────────────────────────────────────────────────────────────
+
+Test passes if:
+✅ All 6 color buttons change colors smoothly
+✅ All 5 mini images swap the main image
+✅ All hover effects work correctly
+✅ Section hidden on mobile, visible on desktop
+✅ No JavaScript errors in console
+✅ All animations are smooth (60fps)
+✅ Keyboard navigation works
+✅ Product data displays correctly
+
+───────────────────────────────────────────────────────────────────────
+
+TEST RESULTS
+───────────────────────────────────────────────────────────────────────
+
+Test Date: ________________
+Tester: ___________________
+Browser: __________________
+Screen Size: ______________
+
+Color Buttons: ⬜ PASS  ⬜ FAIL
+Mini Images:   ⬜ PASS  ⬜ FAIL
+Hover Effects: ⬜ PASS  ⬜ FAIL
+Responsive:    ⬜ PASS  ⬜ FAIL
+Console:       ⬜ PASS  ⬜ FAIL
+Animations:    ⬜ PASS  ⬜ FAIL
+
+Overall: ⬜ PASS  ⬜ FAIL
+
+Notes:
+_________________________________________________________________
+_________________________________________________________________
+_________________________________________________________________
+
+───────────────────────────────────────────────────────────────────────
+
+✅ IMPLEMENTATION COMPLETE - READY FOR TESTING
+───────────────────────────────────────────────────────────────────────

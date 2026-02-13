@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Disallow admin panel
+Disallow: /admin/
+Disallow: /admin
+
+# Disallow authentication pages
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+
+# Disallow checkout and cart
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account/
+
+# Allow specific directories
+Allow: /storage/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml

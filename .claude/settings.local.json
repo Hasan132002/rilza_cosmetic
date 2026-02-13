@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php:*)",
+      "Bash(composer:*)",
+      "Bash(test:*)",
+      "Bash(robocopy:*)",
+      "Bash(mysql:*)",
+      "Bash(C:xamppmysqlbinmysql.exe --version)",
+      "Bash(\"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\" --version)",
+      "Bash(\"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\":*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss init:*)",
+      "Bash(del e:ecommresourcesviewsadmindashboard.blade.php)",
+      "Bash(timeout:*)",
+      "Bash(\"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\" -u root rizla_cosmetics -e \"DROP TABLE IF EXISTS badge_product;\")",
+      "Bash(\"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\" -u root rizla_cosmetics -e \"DROP TABLE IF EXISTS cart_items;\")",
+      "Bash(npm run build:*)",
+      "Bash(cmd /c dir /b e:ecommappHttpControllersFrontend)",
+      "Bash(for file in \"app/Http/Controllers/Frontend/ReviewController.php\" \"app/Http/Controllers/Frontend/AddressController.php\" \"app/Http/Controllers/Frontend/ComparisonController.php\" \"app/Http/Controllers/Frontend/WishlistController.php\")",
+      "Bash(do sed -i 's/public function __construct.*{/\\\\/\\\\/ Middleware applied in routes\\\\/web.php/; /this->middleware/d; /^[[:space:]]*}[[:space:]]*$/{ N; /\\\\/\\\\/ Middleware applied in routes\\\\/web.php\\\\n[[:space:]]*}$/d; }' \"$file\")",
+      "Bash(done)",
+      "Bash([ -f \"resources/views/components/cart-sidebar.blade.php\" ])",
+      "Bash(ls:*)",
+      "Bash(for file in \"app/Http/Controllers/Admin/UserController.php\" \"app/Http/Controllers/Admin/RoleController.php\")",
+      "Bash(do sed -i '/public function __construct/,/^[[:space:]]*}$/{ /public function __construct/d; /this->middleware/d; /^[[:space:]]*}$/d; }' \"$file\")",
+      "Bash(/tmp/final_check.txt << 'EOF'\nFINAL IMPLEMENTATION VERIFICATION\n==================================\n\nFiles Modified:\n1. /e/ecomm/resources/views/frontend/components/product-card.blade.php ✓\n2. /e/ecomm/app/Http/Controllers/Frontend/WishlistController.php ✓\n3. /e/ecomm/app/Http/Controllers/Frontend/ProductController.php ✓\n4. /e/ecomm/resources/views/components/frontend-layout.blade.php ✓\n5. /e/ecomm/routes/web.php ✓\n\nFiles Created:\n1. /e/ecomm/resources/views/components/quick-view-modal.blade.php ✓\n\nKey Features:\n✓ Wishlist AJAX add/remove functionality\n✓ Heart icon with toggle behavior\n✓ Real-time wishlist count updates\n✓ Quick view modal with product gallery\n✓ Quantity selector\n✓ Add to cart from modal\n✓ Add to wishlist from modal\n✓ Beautiful pink/purple theme\n✓ Dark mode support\n✓ Responsive design\n✓ Smooth animations\n✓ Error handling\n✓ Authentication checks\n\nJavaScript Functions Available:\n- addToWishlistAjax\\(productId, event\\)\n- removeFromWishlistAjax\\(productId, event\\)\n- updateWishlistBadge\\(count\\)\n- openQuickView\\(productId, event\\)\n- closeQuickView\\(\\)\n- checkProductWishlistStatus\\(productId\\)\n\nAPI Endpoints:\n- GET /api/product/{id}\n- POST /wishlist/add\n- DELETE /wishlist/remove/{id}\n- POST /wishlist/check\n\nAll components are fully integrated and ready for use!\nEOF)",
+      "Bash(\"e:\\\\ecomm\\\\lang\\\\ur\\\\messages.php\" << 'URDU_EOF'\n<?php\n\nreturn [\n    'home' => 'ہوم',\n    'shop' => 'خریداری',\n    'cart' => 'کارٹ',\n    'checkout' => 'چیک آؤٹ',\n    'my_account' => 'میرا اکاؤنٹ',\n    'login' => 'لاگ ان',\n    'register' => 'رجسٹر',\n    'add_to_cart' => 'کارٹ میں شامل کریں',\n    'buy_now' => 'ابھی خریدیں',\n    'in_stock' => 'اسٹاک میں',\n    'out_of_stock' => 'اسٹاک ختم',\n    'price' => 'قیمت',\n    'total' => 'کل',\n    'products' => 'مصنوعات',\n    'new_arrivals' => 'نئی آمد',\n    'best_sellers' => 'بہترین فروخت',\n    'featured_products' => 'نمایاں مصنوعات',\n    'special_offers' => 'خصوصی پیشکشیں',\n];\nURDU_EOF)"
+    ]
+  }
+}

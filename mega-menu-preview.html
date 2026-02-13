@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizla Cosmetics - Mega Menu Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        .gradient-pink { background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); }
+        .gradient-purple { background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 gradient-pink rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-gem text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Rizla</span>
+                        <p class="text-xs text-gray-500 -mt-1">Cosmetics</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex items-center space-x-8" x-data="{ megaMenuOpen: true }">
+                    <a href="#" class="font-medium text-gray-700 hover:text-pink-600 transition-colors">Home</a>
+
+                    <!-- Shop Mega Menu -->
+                    <div class="relative">
+                        <a href="#"
+                           class="font-medium text-pink-600 transition-colors flex items-center gap-1 cursor-pointer">
+                            Shop <i class="fas fa-chevron-down text-xs transform rotate-180"></i>
+                        </a>
+
+                        <!-- Mega Menu Dropdown -->
+                        <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-screen max-w-6xl z-50">
+                            <div class="bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
+                                <div class="grid grid-cols-4 gap-8">
+                                    <!-- MAKEUP Column -->
+                                    <div class="space-y-4">
+                                        <div class="pb-3 border-b-2 border-pink-500">
+                                            <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">
+                                                MAKEUP
+                                            </h3>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <!-- Lipsticks -->
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-kiss text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Lipsticks</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <!-- Foundations -->
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-paint-roller text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Foundations</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <!-- Eyeshadows -->
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-eye text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Eyeshadows</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <!-- Mascaras -->
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-eye-dropper text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Mascaras</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <!-- Blush -->
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-palette text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Blush</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- SKINCARE Column -->
+                                    <div class="space-y-4">
+                                        <div class="pb-3 border-b-2 border-purple-500">
+                                            <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">
+                                                SKINCARE
+                                            </h3>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-droplet text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Serums</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-hand-holding-droplet text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Moisturizers</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-soap text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Cleansers</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-spray-can text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Toners</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-mask text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Face Masks</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- HAIRCARE Column -->
+                                    <div class="space-y-4">
+                                        <div class="pb-3 border-b-2 border-pink-500">
+                                            <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">
+                                                HAIRCARE
+                                            </h3>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-pump-soap text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Shampoos</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-bottle-droplet text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Conditioners</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-oil-can text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Hair Oils</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-hot-tub-person text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Hair Masks</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- FRAGRANCES Column -->
+                                    <div class="space-y-4">
+                                        <div class="pb-3 border-b-2 border-purple-500">
+                                            <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">
+                                                FRAGRANCES
+                                            </h3>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-spray-can-sparkles text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Perfumes</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-wind text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Body Sprays</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                            <a href="#" class="group flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 transition-all">
+                                                <div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-500 transition-all">
+                                                    <i class="fas fa-vial text-sm text-gray-600 group-hover:text-white"></i>
+                                                </div>
+                                                <div class="flex-1">
+                                                    <div class="text-sm font-medium text-gray-700 group-hover:text-pink-600">Roll-ons</div>
+                                                    <div class="text-xs text-gray-400">3 items</div>
+                                                </div>
+                                                <i class="fas fa-chevron-right text-xs text-pink-500 opacity-0 group-hover:opacity-100 transition-all"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Footer -->
+                                <div class="border-t border-gray-200 mt-8 pt-6 flex justify-between items-center">
+                                    <a href="#" class="text-pink-600 font-bold hover:underline flex items-center gap-2 group">
+                                        <span>View All Products</span>
+                                        <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                                    </a>
+                                    <a href="#" class="gradient-pink text-white px-6 py-2.5 rounded-full font-bold hover:shadow-xl transition-all transform hover:scale-105">
+                                        <i class="fas fa-tags mr-2"></i>Special Offers
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="font-medium text-gray-700 hover:text-pink-600 transition-colors">Blog</a>
+                    <a href="#" class="font-medium text-gray-700 hover:text-pink-600 transition-colors">About</a>
+                    <a href="#" class="font-medium text-gray-700 hover:text-pink-600 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Info Box -->
+    <div class="container mx-auto px-6 py-12">
+        <div class="bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl p-8 shadow-2xl">
+            <h1 class="text-3xl font-bold mb-4">Rizla Cosmetics - Mega Menu Preview</h1>
+            <p class="text-lg mb-6">This is a static preview of the multi-level mega menu system. The mega menu is always visible above for demonstration purposes.</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <div class="text-3xl font-bold">4</div>
+                    <div class="text-sm opacity-90">Parent Categories</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <div class="text-3xl font-bold">17</div>
+                    <div class="text-sm opacity-90">Subcategories</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <div class="text-3xl font-bold">63</div>
+                    <div class="text-sm opacity-90">Total Products</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                    <div class="text-3xl font-bold">17</div>
+                    <div class="text-sm opacity-90">Unique Icons</div>
+                </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-white/10 backdrop-blur rounded-lg">
+                <h2 class="text-xl font-bold mb-3">Features:</h2>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-check-circle mr-2"></i> 4-column grid layout</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Pink/purple gradient theme</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> FontAwesome icons for each subcategory</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Product count badges</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Smooth hover animations</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Responsive design</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Dark mode compatible</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 bg-white rounded-2xl p-8 shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">How to Test on Your Application</h2>
+            <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                <li>Start your Laravel server: <code class="bg-gray-100 px-2 py-1 rounded">php artisan serve</code></li>
+                <li>Open your browser to: <code class="bg-gray-100 px-2 py-1 rounded">http://127.0.0.1:8000</code></li>
+                <li>Hover over the "Shop" menu item in the header</li>
+                <li>Observe the 4-column mega menu with all categories</li>
+                <li>Hover over individual subcategories to see animations</li>
+                <li>Click any category to navigate and see products</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
