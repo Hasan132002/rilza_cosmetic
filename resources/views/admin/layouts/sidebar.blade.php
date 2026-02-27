@@ -13,11 +13,19 @@
     <!-- Navigation -->
     <nav class="flex-1 px-4 py-6 overflow-y-auto custom-scrollbar">
         <!-- Dashboard -->
+        @if(auth()->user()->hasRole('super_admin'))
+        <a href="{{ route('admin.super.dashboard') }}"
+           class="flex items-center px-4 py-3.5 mb-2 rounded-xl transition-all duration-300 {{ request()->routeIs('admin.super.dashboard') ? 'bg-white/20 text-white shadow-lg transform scale-105' : 'text-pink-50 hover:bg-white/10 hover:text-white hover:pl-6' }}">
+            <i class="fas fa-crown w-5 mr-3 text-lg"></i>
+            <span class="font-medium">Super Dashboard</span>
+        </a>
+        @else
         <a href="{{ route('admin.dashboard') }}"
            class="flex items-center px-4 py-3.5 mb-2 rounded-xl transition-all duration-300 {{ request()->routeIs('admin.dashboard') ? 'bg-white/20 text-white shadow-lg transform scale-105' : 'text-pink-50 hover:bg-white/10 hover:text-white hover:pl-6' }}">
             <i class="fas fa-tachometer-alt w-5 mr-3 text-lg"></i>
             <span class="font-medium">Dashboard</span>
         </a>
+        @endif
 
         @can('view_products')
         <!-- Products Section -->

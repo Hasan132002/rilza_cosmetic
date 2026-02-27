@@ -140,7 +140,10 @@ Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
 Route::get('/dashboard', function () {
     // Redirect based on user role
-    if (auth()->user()->hasAnyRole(['super_admin', 'admin', 'staff'])) {
+    if (auth()->user()->hasRole('super_admin')) {
+        return redirect()->route('admin.super.dashboard');
+    }
+    if (auth()->user()->hasAnyRole(['admin', 'staff'])) {
         return redirect()->route('admin.dashboard');
     }
     return redirect()->route('account.dashboard');

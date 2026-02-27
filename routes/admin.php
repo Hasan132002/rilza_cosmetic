@@ -44,8 +44,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
 // Protected Admin Routes (with activity logging)
 Route::middleware(['auth', 'role:super_admin,admin,staff', 'log.activity'])->prefix('admin')->name('admin.')->group(function () {
 
-    // Dashboard
+    // Dashboard - Role based
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/super-dashboard', [DashboardController::class, 'superAdmin'])->name('super.dashboard')->middleware('role:super_admin');
 
     // Categories
     Route::resource('categories', CategoryController::class)->middleware('permission:view_categories');

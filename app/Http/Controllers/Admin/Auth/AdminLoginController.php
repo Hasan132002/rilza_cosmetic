@@ -14,8 +14,11 @@ class AdminLoginController extends Controller
      */
     public function showLoginForm()
     {
-        // If already authenticated as admin, redirect to dashboard
+        // If already authenticated as admin, redirect to appropriate dashboard
         if (Auth::check() && $this->isAdmin()) {
+            if (Auth::user()->hasRole('super_admin')) {
+                return redirect()->route('admin.super.dashboard');
+            }
             return redirect()->route('admin.dashboard');
         }
 
@@ -41,6 +44,9 @@ class AdminLoginController extends Controller
 
             // Check if user has admin access
             if ($this->isAdmin()) {
+                if (Auth::user()->hasRole('super_admin')) {
+                    return redirect()->intended(route('admin.super.dashboard'));
+                }
                 return redirect()->intended(route('admin.dashboard'));
             }
 
